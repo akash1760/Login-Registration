@@ -38,10 +38,17 @@
 			$_SESSION['success'] = "You are now logged in";
 			header('location: index.php');
 		}
+		$user_check_query = "SELECT * FROM users WHERE username='$username' LIMIT 1";
+		$result = mysqli_query($db, $user_check_query);
+		$user = mysqli_fetch_assoc($result);
+
+		if ($user) { // if user exists
+			if ($user['username'] == $username) {
+				array_push($errors, "Username already exists");
+			}
+		}
 
 	}
-
-	// ... 
 
 	// LOGIN USER
 	if (isset($_POST['login_user'])) {

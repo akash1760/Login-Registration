@@ -4,19 +4,25 @@
 }
 body {
 	font-size: 120%;
-	background: #F8F8FF;
+	/* background: #ffffe9; */
+	background-image: url('https://img.freepik.com/free-vector/gradient-abstract-background_23-2149131346.jpg?w=1060&t=st=1720546738~exp=1720547338~hmac=ec60c6d51526413eb2ff130dc02ff1ce4b3379f009075991e3262adb26ba3d69');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .header {
 	width: 30%;
 	margin: 50px auto 0px;
 	color: white;
-	background: #5F9EA0;
+	/* background: #9e5dff; */
+	/* filter: blur(10%);
+	-webkit-filter: blur(1px); */
 	text-align: center;
 	border: 1px solid #B0C4DE;
 	border-bottom: none;
 	border-radius: 10px 10px 0px 0px;
 	padding: 20px;
+	margin-top: 150px;
 }
 form, .content {
 	width: 30%;
@@ -47,9 +53,10 @@ form, .content {
 	padding: 10px;
 	font-size: 15px;
 	color: white;
-	background: #5F9EA0;
+	background: #461c79;
 	border: none;
 	border-radius: 5px;
+
 }
 .error {
 	width: 92%; 
